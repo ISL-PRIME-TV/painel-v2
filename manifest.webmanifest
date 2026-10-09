@@ -1,0 +1,28 @@
+{
+  "id": "/painel-v2/",
+  "name": "Painel V2 — ISL Ativador",
+  "short_name": "Painel V2",
+  "description": "Painel privado de códigos do Ativador ISL V2.",
+  "lang": "pt-BR",
+  "start_url": "/painel-v2/",
+  "scope": "/painel-v2/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#f4f7fb",
+  "theme_color": "#f4f7fb",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./icons/isl-v2-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/isl-v2-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

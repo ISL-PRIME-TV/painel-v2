@@ -44,12 +44,12 @@ self.addEventListener("fetch", (event) => {
         const response = await fetch(request);
         if (response.ok) {
           const cache = await caches.open(CACHE_NAME);
-          await cache.put("/painel-v2/", response.clone());
+          await cache.put(APP_ROOT, response.clone());
         }
         return response;
       } catch {
         const cache = await caches.open(CACHE_NAME);
-        return (await cache.match("/painel-v2/")) || Response.error();
+        return (await cache.match(APP_ROOT)) || Response.error();
       }
     })());
     return;
